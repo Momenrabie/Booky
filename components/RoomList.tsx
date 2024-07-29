@@ -15,7 +15,7 @@ const RoomList = ({ rooms }: { rooms: any }) => {
             return roomType ==='all'?rooms:roomType===room.attributes.type;
         });
           setFilteredRoom(filtered);
-    },[roomType])
+    },[roomType,rooms])
 
 
   return (
